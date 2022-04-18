@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>hypD3V - Hesap Makinesi</title>
+  <link href='https://fonts.googleapis.com/css?family=Emilys+Candy' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+D3V<div id="cat">
+		<div id="calculator">
+			<form>
+
+				<input type="text" id="screen"><br>
+
+			<div id="typing">
+				<input type="button" value="AC" id="clear" onclick="addToScreen('ac')">
+				<input type="button" value="CE" id="ce" onclick="backspace()"><br>
+
+				<input type="button" value="9" id="keys" onclick="addToScreen('9')">
+				<input type="button" value="8" id="keys" onclick="addToScreen('8')">
+				<input type="button" value="7" id="keys" onclick="addToScreen('7')">
+				<input type="button" value="6" id="keys" onclick="addToScreen('6')">
+				<input type="button" value="5" id="keys" onclick="addToScreen('5')"><br>
+
+				<input type="button" value="4" id="keys" onclick="addToScreen('4')">
+				<input type="button" value="3" id="keys" onclick="addToScreen('3')">
+				<input type="button" value="2" id="keys" onclick="addToScreen('2')">
+				<input type="button" value="1" id="keys" onclick="addToScreen('1')">
+				<input type="button" value="0" id="keys" onclick="addToScreen('0')"><br>
+				
+				<input type="button" value="." id="keys" onclick="addToScreen('.')">
+				<input type="button" value="+" id="keys" onclick="addToScreen('+')">
+				<input type="button" value="-" id="keys" onclick="addToScreen('-')">
+				<input type="button" value="*" id="keys" onclick="addToScreen('*')">
+				<input type="button" value="/" id="keys" onclick="addToScreen('/')"><br>
+
+
+				<input type="button" value="=" id="equal" onclick="answer()">
+			</div>
+			</form>
+		</div>
+</div>
+<div id="bubble">
+</div>
+<p id="madewith">
+  Made by  <br><a href="https://www.github.com/hypD3V" target="_blank">@hypD3V</a> with<br>Efe Gündoğdu<p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
